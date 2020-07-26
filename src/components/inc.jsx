@@ -5,6 +5,7 @@ const Inc = props => {
   return (
     <div>
       <button onClick={dec}>+</button>{value}
+
       <button onClick={inc}>-</button>
 
     </div>
