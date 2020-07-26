@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Card, CardGrid, Container, Header} from './Elements';
 import './App.css';
 import Menu from './Menu';
@@ -6,6 +6,8 @@ import blue from './extras/blue.png';
 import purp from './extras/purp.png';
 import black from './extras/black.png';
 import green from './extras/green.png';
+import Toggle from './components/Toggle';
+import Inc from './components/inc';
 
 function App () {
   return (
@@ -16,6 +18,8 @@ function App () {
       </Header>
       <Container>
         <h2>Super Cool</h2>
+        <Toggle />
+        <Inc />
         <CardGrid>
           <Card style={{background: 'var(--purp)'}}>
             <h3>Some card</h3>
