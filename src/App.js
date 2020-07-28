@@ -10,8 +10,9 @@ import Toggle from './components/Toggle';
 import Inc from './components/inc';
 import Mount from './components/Mount';
 import Hover from './components/Hover';
-import PageWrapper from './components/PageWrapper';
+import {PageWrapper} from './state';
 import Nav from './components/Nav';
+import Cookie from './components/Cookie';
 
 function App() {
  return (
@@ -23,6 +24,7 @@ function App() {
    <Nav />
    <Container>
     <h2>Super Cool</h2>
+    <Cookie />
 
     <Toggle />
     <Inc />

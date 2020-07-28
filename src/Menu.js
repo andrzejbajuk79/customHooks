@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
-import {AppContext} from './components/PageWrapper';
+import React from 'react';
+import {useAppState} from './state';
 
 const Menu = () => {
- const {isMenuOpen, toggleMenu} = useContext(AppContext);
+ const {toggleMenu} = useAppState();
  return (
   <button onClick={toggleMenu}>
    <svg viewBox='0 0 18 15' width='20'>
